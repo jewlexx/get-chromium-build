@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "private": true,
   "license": "MIT",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "ncc build index.js --license licenses.txt"
+  },
   "dependencies": {
     "@actions/core": "1.6.0",
     "@actions/github": "5.0.0",
