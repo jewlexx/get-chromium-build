@@ -1,0 +1,5 @@
+name: 'Package Chromium'
+description: 'Downloads the latest windows build of Chromium and puts it all into a single installer'
+runs:
+  using: 'node16'
+  main: 'index.js'
