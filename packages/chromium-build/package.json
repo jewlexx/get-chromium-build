@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "license": "MIT",
   "author": "jamesinaxx <61040004+jamesinaxx@users.noreply.github.com>",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "scripts": {
+    "prepack": "tsc"
+  },
   "dependencies": {
     "axios": "0.24.0"
   },
