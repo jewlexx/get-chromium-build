@@ -6,7 +6,7 @@ jobs:
     name: Pack Chromium
     steps:
       - name: Checkout
-        uses: actions/checkout
+        uses: actions/checkout@v2.4.0
 
       - name: Gets the Chromium build id
         id: build
