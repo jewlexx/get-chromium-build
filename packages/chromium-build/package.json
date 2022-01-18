@@ -1,6 +1,6 @@
 {
   "name": "get-chromium-build",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "author": "jamesinaxx <61040004+jamesinaxx@users.noreply.github.com>",
   "main": "dist/index.js",
