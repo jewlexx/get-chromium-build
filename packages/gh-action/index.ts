@@ -1,6 +1,6 @@
-const getBuildId = require('get-chromium-build').default;
-const core = require('@actions/core');
-const gh = require('@actions/github');
+import getBuildId from 'get-chromium-build';
+import core from '@actions/core';
+import gh from '@actions/github';
 
 (async () => {
   const buildId = await getBuildId();
