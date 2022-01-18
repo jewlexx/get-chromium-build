@@ -1,12 +1,13 @@
 import axios from 'axios';
 
-(async () => {
+async function getLastChange(): Promise<number> {
   const lastChangeUrl =
     'https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Win%2FLAST_CHANGE?alt=media';
 
-  const { data } = await axios.get<string>(lastChangeUrl);
+  const { data } = await axios.get<number>(lastChangeUrl);
 
-  const lastChange = parseInt(data, 10);
+  return data;
+}
 
-  process.stdout.write(lastChange.toString());
-})();
+export default getLastChange;
+export { getLastChange };
