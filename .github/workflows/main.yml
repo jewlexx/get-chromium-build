@@ -7,4 +7,4 @@ jobs:
     steps:
       - name: Gets the Chromium build id
         id: hello
-        uses: ../../packages/gh-action
+        uses: '../../packages/gh-action'
